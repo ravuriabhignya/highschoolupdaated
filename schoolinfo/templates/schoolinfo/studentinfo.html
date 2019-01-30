@@ -1,0 +1,24 @@
+<html>
+<head>
+<link rel="stylesheet" >
+</head>
+<body>
+
+<form method="post" id ='Mainform'>
+	{{% csrf_token %}}
+	First name: <input type="text" name="fname"><br>
+  	Student Id: <input type="number" name="id"><br>
+	<button type="submit">Submit</button>
+</form>
+ <h1>Student Data</h2>
+		<ul>
+			<li><h3>First Name</h3>{{ args.first_name}}</li>
+			<li><h3>last Name</h3>{{ args.last_name}}</li>
+			<li><h3>email</h3>{{ args.email }}</li>
+			<li><h3>gender</h3>{{ args.gender}}</li>
+			<li><h3>School</h3>{{ args.school}}</li>
+			<li><h3>Book</h3>{{ args.book }}</li>
+			<li><h3></h3></li>
+		</ul> 
+</body>
+</html>
